@@ -106,49 +106,71 @@ int main()//Início do programa
 	//Início de criação de variáveis/string
 	int opcao=0; //Definiçõa variáveis
 	int laco=1;//Definiçõa variáveis
+	char senhadigitada[] = "a";
+	int comparacao;
+	
+	printf("### Cartório da EBAC ###\n\n");
+	printf("Login de administrador!\n\n Digite a sua senha: ");
+	scanf("%s", senhadigitada);
+	
+	comparacao = strcmp(senhadigitada, "admin");
+	
+	if (comparacao == 0){
 		
-	for(laco=1;laco=1;){//Função de repetição do menu
-	
-		system("cls");//Responsável por limpar dados digitados e coletados da tela
-	
-		setlocale(LC_ALL, "Portuguese");//Faz o sistema reconhecer os acentos da língua "Portuguesa"
-	
-   		printf("### Cartório da EBAC ###\n\n"); //Início do menu
- 		printf("Escolha a opção desejada do menu: \n\n");//Título do menu
-  		printf("\t 1 - Registrar Nomes \n");//opções a ser realizadas
-		printf("\t 2 - Consultar Nomes \n");//opções a ser realizadas
-		printf("\t 3 - Deletar Nomes \n");//opções a ser realizadas
-		printf("\t 4 - Sair do sistema\n\n");//opções a ser realizadas
-		printf("Opção: ");
- 	    
- 	    //Fim do menu
-    
-   	 	scanf("%d", &opcao); //Armazenando a esclolha do usuário
-    
-  		system("cls");//Responsável por limpar dados digitados e coletados da tela
-  		
-  		switch (opcao){
-  			case 1: 
-				registro();//Chama a função a ser execultada, após usuário interagir no menu
-				break;
-    		
-			case 2:
-				consulta();//Chama a função a ser execultada, após usuário interagir no menu
-				break;
-				
-			case 3:
-				deletar();//Chama a função a ser execultada, após usuário interagir no menu
-				break;
-				
-			case 4:
-				printf("Obrigado por utilizar o sistema! \n");
-				return 0;
-				break;
-				
-			default:
-				printf("Essa opção não está disponível!\n");
-				system ("pause");
-				break;
+		system("cls");
+		for(laco=1;laco=1;){//Função de repetição do menu
+		
+			system("cls");//Responsável por limpar dados digitados e coletados da tela
+		
+			setlocale(LC_ALL, "Portuguese");//Faz o sistema reconhecer os acentos da língua "Portuguesa"
+		
+	   		printf("### Cartório da EBAC ###\n\n"); //Início do menu
+	 		printf("Escolha a opção desejada do menu: \n\n");//Título do menu
+	  		printf("\t 1 - Registrar Nomes \n");//opções a ser realizadas
+			printf("\t 2 - Consultar Nomes \n");//opções a ser realizadas
+			printf("\t 3 - Deletar Nomes \n");//opções a ser realizadas
+			printf("\t 4 - Sair do sistema\n\n");//opções a ser realizadas
+			printf("Opção: ");
+	 	    
+	 	    //Fim do menu
+	    
+	   	 	scanf("%d", &opcao); //Armazenando a esclolha do usuário
+	    
+	  		system("cls");//Responsável por limpar dados digitados e coletados da tela
+	  		
+	  		switch (opcao){
+	  			case 1: 
+					registro();//Chama a função a ser execultada, após usuário interagir no menu
+					break;
+	    		
+				case 2:
+					consulta();//Chama a função a ser execultada, após usuário interagir no menu
+					break;
+					
+				case 3:
+					deletar();//Chama a função a ser execultada, após usuário interagir no menu
+					break;
+					
+				case 4:
+					printf("Obrigado por utilizar o sistema! \n");
+					system("cls");
+					main();
+					break;
+					
+				default:
+					printf("Essa opção não está disponível!\n");
+					system ("pause");
+					break;
+			}
 		}
 	}
+	
+	else{
+		
+		printf("\n Senha digitada errada, Digite novamente! \n\n");
+		system("pause");
+		system("cls");
+		main();
+	}
+		
 }
