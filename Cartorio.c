@@ -130,10 +130,10 @@ int main()//Início do programa
   		switch (opcao){
   			case 1: 
 				registro();//Chama a função a ser execultada, após usuário interagir no menu
-    			break;
+				break;
     		
 			case 2:
-    			consulta();//Chama a função a ser execultada, após usuário interagir no menu
+				consulta();//Chama a função a ser execultada, após usuário interagir no menu
 				break;
 				
 			case 3:
