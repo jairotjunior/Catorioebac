@@ -116,10 +116,10 @@ int main()//Início do programa
    		printf("### Cartório da EBAC ###\n\n"); //Início do menu
  		printf("Escolha a opção desejada do menu: \n\n");//Título do menu
   		printf("\t 1 - Registrar Nomes \n");//opções a ser realizadas
- 	    printf("\t 2 - Consultar Nomes \n");//opções a ser realizadas
- 	    printf("\t 3 - Deletar Nomes \n");//opções a ser realizadas
- 	    printf("\t 4 - Sair do sistema\n\n");//opções a ser realizadas
- 	    printf("Opção: ");
+		printf("\t 2 - Consultar Nomes \n");//opções a ser realizadas
+		printf("\t 3 - Deletar Nomes \n");//opções a ser realizadas
+		printf("\t 4 - Sair do sistema\n\n");//opções a ser realizadas
+		printf("Opção: ");
  	    
  	    //Fim do menu
     
