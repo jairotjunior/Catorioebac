@@ -117,7 +117,8 @@ int main()//Início do programa
  		printf("Escolha a opção desejada do menu: \n\n");//Título do menu
   		printf("\t 1 - Registrar Nomes \n");//opções a ser realizadas
  	    printf("\t 2 - Consultar Nomes \n");//opções a ser realizadas
- 	    printf("\t 3 - Deletar Nomes \n\n");//opções a ser realizadas
+ 	    printf("\t 3 - Deletar Nomes \n");//opções a ser realizadas
+ 	    printf("\t 4 - Sair do sistema\n\n");//opções a ser realizadas
  	    printf("Opção: ");
  	    
  	    //Fim do menu
@@ -137,6 +138,11 @@ int main()//Início do programa
 				
 			case 3:
 				deletar();//Chama a função a ser execultada, após usuário interagir no menu
+				break;
+				
+			case 4:
+				printf("Obrigado por utilizar o sistema! \n");
+				return 0;
 				break;
 				
 			default:
