@@ -132,7 +132,7 @@ int main()//Início do programa
 				registro();//Chama a função a ser execultada, após usuário interagir no menu
     			break;
     		
-    		case 2:
+			case 2:
     			consulta();//Chama a função a ser execultada, após usuário interagir no menu
 				break;
 				
